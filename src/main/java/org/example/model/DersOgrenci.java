@@ -64,4 +64,15 @@ public class DersOgrenci {
     public void setNote(long note) {
         this.note = note;
     }
+
+    @Override
+    public String toString() {
+        return "DersOgrenci{" +
+                "ID=" + ID +
+                ", DERS_ID=" + DERS_ID +
+                ", OGR_ID=" + OGR_ID +
+                ", devamsizlik=" + devamsizlik +
+                ", note=" + note +
+                '}';
+    }
 }

@@ -32,7 +32,7 @@ public class Main {
 //            System.err.println(ogrenci_repo.save(new Ogrenci("batuhan",931,22)));
 //            System.err.println(konu_repo.save(new Konu("Konu")));
 //			System.err.println(ogretmen_repo.getByID(22));
-			System.err.println(dersOgrenci_repo.getByID(2));
+//			System.err.println(dersOgrenci_repo.getByID(2));
 //			System.err.println(ogretmen_repo.deleteByID(7));
         }
         catch (SQLException e)

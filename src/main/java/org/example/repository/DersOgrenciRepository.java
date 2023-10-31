@@ -2,7 +2,6 @@ package org.example.repository;
 
 import org.example.Constants;
 import org.example.model.DersOgrenci;
-import org.example.model.Ogrenci;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,7 +12,7 @@ public class DersOgrenciRepository {
         ArrayList<DersOgrenci> list = new ArrayList<>();
         Connection con = Constants.getConnection();
         Statement stmnt = con.createStatement();
-        ResultSet result = stmnt.executeQuery("select * from \"public\".\"DERS_OGRENCI\" order by \"ID\" asc");
+        ResultSet result = stmnt.executeQuery("SELECT * FROM public.\"DERS_OGRENCI\" order by \"ID\" asc");
         while (result.next())
         {
             long id = result.getLong("ID");
